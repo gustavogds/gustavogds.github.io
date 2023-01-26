@@ -1,76 +1,40 @@
-import {useState, useEffect} from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../../assets/images/logo.png";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import "./Navbar.css";
+import logo from "../../assets/images/logo1.png";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import Toggler from "./Toggler";
 
-export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [])
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
-  
   return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}
 
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" className="logo-img" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link
-                href="/home"
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("home")}
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                href="/skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("projects")}
-              >
-                Projects
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    
-  );
-};
+const Navbar = ({language, handleClick}) => {
+  return <nav className="navbar">
+    <CustomLink to="/" className="navbar-item">
+        Home
+    </CustomLink>
+    <CustomLink to="/projects" className="navbar-item">
+        Projects
+    </CustomLink>
+    <Link to="/">
+        <img alt="Gustavo" src={logo} className="navbar-logo"/>
+    </Link>
+    <CustomLink to="/about" className="navbar-item">
+        About me
+    </CustomLink>
+    <li >
+        <Toggler language={language} handleClick={handleClick}/>
+    </li>
+  </nav>
+}
+
+export default Navbar;
