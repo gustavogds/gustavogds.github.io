@@ -34,7 +34,9 @@ body {
   cursor: pointer;
   width: 150px;
   object-fit: contain;
-  padding: 5px;
+  padding: 0px 6px;
+  box-shadow: 0.3rem .3rem 1rem rgba(0,0,0,0.4);
+  border-radius: 47%;
 }
 
 .navbar li {

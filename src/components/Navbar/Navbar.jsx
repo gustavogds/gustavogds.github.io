@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../assets/images/logo1.png";
+import logo from "../../assets/images/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import Toggler from "./Toggler";
 

@@ -1,0 +1,8 @@
+.fa {
+    color: #f30303;
+    box-shadow: 0.5rem .5rem 1rem rgba(0,0,0,0.4);
+}
+
+.fa:hover {
+    color: #8d1100;
+}
