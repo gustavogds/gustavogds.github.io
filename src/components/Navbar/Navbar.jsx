@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
-import Toggler from "./Toggler";
+import LangChanger from "./LangChanger";
+import {useTranslation } from "react-i18next";
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
@@ -17,23 +18,25 @@ function CustomLink({ to, children, ...props }) {
   )
 }
 
-const Navbar = ({language, handleClick}) => {
+const Navbar = () => {
+  const { t } = useTranslation()
+
   return <nav className="navbar">
     <CustomLink to="/" className="navbar-item">
-        Home
+        {t('home')}
     </CustomLink>
     <CustomLink to="/projects" className="navbar-item">
-        Projects
+        {t('projects')}
     </CustomLink>
     <Link to="/">
         <img alt="Gustavo" src={logo} className="navbar-logo"/>
     </Link>
     <CustomLink to="/about" className="navbar-item">
-        About me
+        {t('about')}
     </CustomLink>
-    <li >
-        <Toggler language={language} handleClick={handleClick}/>
-    </li>
+    <span >
+        <LangChanger />
+    </span>
   </nav>
 }
 

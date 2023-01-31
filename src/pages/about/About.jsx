@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense, useState } from "react";
 import './About.css'
 import {Box} from "@mui/material";
 import infos from '../../components/infos'
+import {useTranslation, initReactI18next, Trans } from "react-i18next";
 
 function ShowInformation(props) {
     const {title, period, local, description} = props;
@@ -23,25 +24,27 @@ function ShowInformation(props) {
 }
 
 const About = () => {
+    const { t } = useTranslation()
+
     return (
         <Box className="mainAbout">
             <Box className="mainAboutSections">
-                <span>Experience</span>
+                <span>{t('experience')}</span>
             </Box>
             <Box className="mainAboutSectionsItem">
                 <div>
-                    {infos.experienceInformationsEN.map((info, index) => (
-                        <ShowInformation key={index} title={info.title} period={info.period} local={info.local} description={info.description} />
+                    {infos.experienceInformations?.map((info, index) => (
+                        <ShowInformation key={index} title={t(info.title)} period={t(info.period)} local={t(info.local)} description={t(info.description)} />
                     ))}
                 </div>
             </Box>
             <Box className="mainAboutSections">
-                <span>Academic Formation</span>
+                <span>{t('academicFormation')}</span>
             </Box>
             <Box className="mainAboutSectionsItem">
                 <div>
-                    {infos.academicInformationsEN.map((info, index) => (
-                        <ShowInformation key={index} title={info.title} period={info.period} local={info.local} description={info.degree} />
+                    {infos.academicInformations?.map((info, index) => (
+                        <ShowInformation key={index} title={t(info.title)} period={t(info.period)} local={t(info.local)} description={t(info.degree)} />
                     ))}
                 </div>
             </Box>

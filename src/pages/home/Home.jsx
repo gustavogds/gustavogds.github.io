@@ -4,19 +4,22 @@ import {Box} from "@mui/material";
 import me from '../../assets/images/self.jpg'
 import {IconPrint, SocialIcon} from "./infoShow";
 import infos from '../../components/infos'
+import {useTranslation } from "react-i18next";
 
 const Home = () => {
+    const { t } = useTranslation()
+
     return (
         <Box className="mainHome">
             <Box className="self-image" alt="profile image" component={'img'} src={me} width={{xs: '35vh', md: '40vh'}} height={{xs: '35vh', md: '40vh'}} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}} />
                 <Box className="self-text">
-                <h1>Hi, I'm Gustavo<span className="wave-hand">👋</span>
+                <h1>{t('homeWelcome')}<span className="wave-hand">👋</span>
                 </h1>
-                <h2>I'm a Full Stack Developer.</h2>
-                
+                <h2>{t('homeDescription')}</h2>
+                {console.log(t('homeDescription'))}
                 <Box className="infos" component={'ul'}>
                     {infos.homeInformations.map((info, index) => (
-                        <IconPrint key={index} icon={info.icon} text={info.text} />
+                        <IconPrint key={index} icon={info.icon} text={t(info.text)} />
                     ))}
                 </Box>
                 <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>

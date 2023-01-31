@@ -4,6 +4,13 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
+import translationEn from './assets/locales/en/translationEn.js'
+import translationPt from './assets/locales/pt/translationPt.js'
+import translation from './assets/locales/pt/translation.json'
+
+import 'bootstrap/dist/js/bootstrap.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 import "./index.css";
 import App from "./App";
@@ -11,20 +18,20 @@ import App from "./App";
 i18next
   .use(HttpApi)
   .use(LanguageDetector)
-  .use(initReactI18next)
+  .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    supportedLngs: ["en", "br"],
+    resources: {
+      en: { translation: translationEn },
+      pt: { translation: translationPt },
+    },
+    supportedLngs: ['en', 'pt'],
     fallbackLng: "en",
     debug: false,
-    // Options for language detector
     detection: {
-      order: ["path", "cookie", "htmlTag"],
-      caches: ["cookie"],
+      order: ['path', 'cookie', 'htmlTag'],
+      caches: ['cookie'],
     },
-    // react: { useSuspense: false },
-    backend: {
-      loadPath: "./assets/locales/{{lng}}/translation.json",
-    },
+    interpolation: { escapeValue: false },
   });
 
 const loadingMarkup = (

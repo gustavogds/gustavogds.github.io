@@ -54,3 +54,11 @@ body {
   transform: translateY(-3px);
   transition: all 0.2s ease-in-out;
 }
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff00;
+  border-radius: 10;
+  border-color: #ffffff;
+}
