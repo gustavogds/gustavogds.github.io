@@ -23,16 +23,16 @@ const Navbar = () => {
 
   return <nav className="navbar">
     <CustomLink to="/" className="navbar-item">
-        {t('home')}
+        {t('Home')}
     </CustomLink>
     <CustomLink to="/projects" className="navbar-item">
-        {t('projects')}
+        {t('Projects')}
     </CustomLink>
     <Link to="/">
         <img alt="Gustavo" src={logo} className="navbar-logo"/>
     </Link>
     <CustomLink to="/about" className="navbar-item">
-        {t('about')}
+        {t('About me')}
     </CustomLink>
     <span >
         <LangChanger />

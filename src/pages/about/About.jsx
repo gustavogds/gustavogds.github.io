@@ -2,7 +2,7 @@ import React, { Suspense, useState } from "react";
 import './About.css'
 import {Box} from "@mui/material";
 import infos from '../../components/infos'
-import {useTranslation, initReactI18next, Trans } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 function ShowInformation(props) {
     const {title, period, local, description} = props;
@@ -29,7 +29,7 @@ const About = () => {
     return (
         <Box className="mainAbout">
             <Box className="mainAboutSections">
-                <span>{t('experience')}</span>
+                <span>{t('Experience')}</span>
             </Box>
             <Box className="mainAboutSectionsItem">
                 <div>
@@ -39,7 +39,7 @@ const About = () => {
                 </div>
             </Box>
             <Box className="mainAboutSections">
-                <span>{t('academicFormation')}</span>
+                <span>{t('Academic Formation')}</span>
             </Box>
             <Box className="mainAboutSectionsItem">
                 <div>

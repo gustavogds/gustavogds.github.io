@@ -13,10 +13,9 @@ const Home = () => {
         <Box className="mainHome">
             <Box className="self-image" alt="profile image" component={'img'} src={me} width={{xs: '35vh', md: '40vh'}} height={{xs: '35vh', md: '40vh'}} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}} />
                 <Box className="self-text">
-                <h1>{t('homeWelcome')}<span className="wave-hand">👋</span>
+                <h1>{t("Hi, I'm Gustavo")}<span className="wave-hand">👋</span>
                 </h1>
-                <h2>{t('homeDescription')}</h2>
-                {console.log(t('homeDescription'))}
+                <h2>{t("I'm a Full Stack Developer.")}</h2>
                 <Box className="infos" component={'ul'}>
                     {infos.homeInformations.map((info, index) => (
                         <IconPrint key={index} icon={info.icon} text={t(info.text)} />
