@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React from "react";
 import './About.css'
 import {Box} from "@mui/material";
 import infos from '../../components/infos'
