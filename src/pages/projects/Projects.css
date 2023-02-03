@@ -1,3 +1,124 @@
-body {
-    background-color: blue;
+.prjItems {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3%;
+}
+
+.prjItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    border: solid 1px #f30303;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.prjItem h1, h2, h3, h4 {
+    cursor: default;
+}
+
+.linkBtn {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  object-fit: fill;
+  padding: 0 10px;
+  display: flex;
+}
+
+.linkBtn:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnShowInfo {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ac0202,  #c90505);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .3s;
+  margin: 4rem 0 -2rem 0;
+}
+
+.btnShowInfo:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  font-size: 16.1px;
+}
+
+.project-body {
+  padding: 2rem;
+  margin: 0 auto;
+  border: 1px solid #f30303;
+  border-radius: 8px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project-description {
+  max-width: 85%;
+  border: 1px solid #f30303;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+}
+
+.project-body h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.project-btnShowInfo {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ac0202,  #c90505);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  border: 0;
+  transition: box-shadow .3s;
+}
+
+.project-btnShowInfo:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  font-size: 16.1px;
+}
+
+.project-body button {
+  margin-top: 3rem;
 }

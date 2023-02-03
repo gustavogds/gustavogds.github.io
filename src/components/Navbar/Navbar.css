@@ -8,7 +8,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  padding: 0 0.6rem 0 1rem;
+  padding: 0 0rem 0 2.5rem;
   height: 170px;
 }
 
@@ -106,3 +106,10 @@ body {
   transform: scale(1.05);
 }
 
+.btnSlot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 0px;
+}

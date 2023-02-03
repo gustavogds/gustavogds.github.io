@@ -15,7 +15,7 @@ const LangChanger = () => {
   };
 
   return (
-    <Box>
+    <Box className="btnSlot">
       <button className="lang-btn" onClick={() => changeLanguage("pt")}>
         <span class="fi fi-br" />
       </button>
