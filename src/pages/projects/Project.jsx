@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Projects.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import data from "./projectsData.json";
 import { Box } from "@mui/material";
+
+import { FaArrowLeft } from "react-icons/fa";
 
 const Project = () => {
   const { t } = useTranslation();
@@ -28,9 +30,24 @@ const Project = () => {
           <p>{t(prj.description)}</p>
         </span>
       </div>
-      <button class="project-btnShowInfo">
-        <a className="linkBtn" href={prj.firstBtnLink}>{t(prj.firstBtn)}</a>
-      </button>
+      <div className="project-buttons">
+        <button class="btn-goBack">
+          <Link to={"/projects"} className="linkBtn">
+            <FaArrowLeft className="arrow" />
+          </Link>
+        </button>
+        <div className="project-buttons">
+          {prj.buttons?.map((btn) => {
+            return (
+              <button class="project-btnShowInfo">
+                <a className="linkBtn" href={btn.buttonLink}>
+                  {t(btn.buttonTitle)}
+                </a>
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
