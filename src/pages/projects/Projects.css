@@ -96,6 +96,18 @@
   text-align: justify;
 }
 
+.project-description p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-indent: 1rem;
+}
+
+.project-description strong {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
 .project-body h1 {
   font-size: 2rem;
   font-weight: 600;

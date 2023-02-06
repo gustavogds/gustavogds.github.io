@@ -26,8 +26,25 @@ const Project = () => {
       <h1>{t(prj.title)}</h1>
       <div className="project-description">
         <span>
-          <strong>{t("Summary")}</strong>
-          <p>{t(prj.description)}</p>
+          <strong>{t("Project Summary")}</strong>
+          {prj.description?.map((desc) => {
+            return (
+              <p>
+                {t(desc.paragraph)}
+              </p>
+            );
+          })}
+        </span>
+        <Box height={"1rem"}/>
+        <span>
+          <strong>{t("Project Details")}</strong>
+          {prj.details?.map((detail) => {
+            return (
+              <p>
+                {t(detail.paragraph)}
+              </p>
+            );
+          })}
         </span>
       </div>
       <div className="project-buttons">
