@@ -1,5 +1,6 @@
 import React from 'react';
 import {Box} from "@mui/material";
+import "./Home.css";
 
 function IconPrint(props) {
     const {icon, text} = props;
