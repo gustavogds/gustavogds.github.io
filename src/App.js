@@ -1,11 +1,11 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Projects from './pages/projects/Projects';
-import Project from './pages/projects/Project';
-import About from './pages/about/About';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+import Project from "./pages/projects/Project";
+import About from "./pages/about/About";
 
 function App() {
   return (

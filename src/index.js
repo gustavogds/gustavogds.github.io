@@ -4,8 +4,8 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
-import translationPt from './assets/locales/pt/translation.json'
-import translationEn from './assets/locales/en/translation.json'
+import translationPt from "./assets/locales/pt/translation.json";
+import translationEn from "./assets/locales/en/translation.json";
 
 import "./index.css";
 import App from "./App";
@@ -19,12 +19,12 @@ i18next
       en: { translation: translationEn },
       pt: { translation: translationPt },
     },
-    supportedLngs: ['en', 'pt'],
+    supportedLngs: ["en", "pt"],
     fallbackLng: "en",
     debug: false,
     detection: {
-      order: ['cookie', 'htmlTag'],
-      caches: ['cookie'],
+      order: ["cookie", "htmlTag"],
+      caches: ["cookie"],
     },
     interpolation: { escapeValue: false },
   });
