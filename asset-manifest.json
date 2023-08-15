@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e841c9a.css",
-    "main.js": "/static/js/main.cdb20b83.js",
+    "main.css": "/static/css/main.77203ad6.css",
+    "main.js": "/static/js/main.15df736c.js",
     "static/media/do.svg": "/static/media/do.d2287a1e1eee0805fc27.svg",
     "static/media/rs.svg": "/static/media/rs.dc155455e86e12200cb5.svg",
     "static/media/self.jpg": "/static/media/self.aa4cd8c2ecd248760901.jpg",
@@ -13,11 +13,17 @@
     "static/media/sv.svg": "/static/media/sv.2b995d455aa93dcba0cf.svg",
     "static/media/logo.png": "/static/media/logo.391baa016c23208eb228.png",
     "static/media/pe.svg": "/static/media/pe.38abe80e0cb9775bea8c.svg",
+    "static/media/studentms_studentinfo.png": "/static/media/studentms_studentinfo.27fbc8d501c5c2896123.png",
     "static/media/me.svg": "/static/media/me.0c03b01f0a036dd1e720.svg",
+    "static/media/studentms_allstudents.png": "/static/media/studentms_allstudents.d43a1c96ba42206ddbdb.png",
+    "static/media/studentms_editstudent.png": "/static/media/studentms_editstudent.eb328842d7174a91dffc.png",
     "static/media/bz.svg": "/static/media/bz.9e8153a1022c0f4282f8.svg",
     "static/media/hr.svg": "/static/media/hr.89b8c8af46eef412f1cd.svg",
+    "static/media/studentms_signup.png": "/static/media/studentms_signup.a5f46225459e6bf9074b.png",
+    "static/media/studentms_addstudent.png": "/static/media/studentms_addstudent.21817c80fa59b11473bd.png",
     "static/media/ai.svg": "/static/media/ai.8b2ef8f76c8c1981c83e.svg",
     "static/media/gt.svg": "/static/media/gt.854277c2db5540ea978c.svg",
+    "static/media/studentms_signin.png": "/static/media/studentms_signin.ecebe4706d70315089e2.png",
     "static/media/ad.svg": "/static/media/ad.aa31ee0af98d08407676.svg",
     "static/media/gs.svg": "/static/media/gs.8e80bc152270a2f24e01.svg",
     "static/media/as.svg": "/static/media/as.965342ed79d6814bd4c1.svg",
@@ -271,11 +277,11 @@
     "static/media/de.svg": "/static/media/de.6435bf24d148ca7248e7.svg",
     "static/media/bd.svg": "/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/static/media/id.f624e2c8444a7794b357.svg",
-    "main.1e841c9a.css.map": "/static/css/main.1e841c9a.css.map",
-    "main.cdb20b83.js.map": "/static/js/main.cdb20b83.js.map"
+    "main.77203ad6.css.map": "/static/css/main.77203ad6.css.map",
+    "main.15df736c.js.map": "/static/js/main.15df736c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e841c9a.css",
-    "static/js/main.cdb20b83.js"
+    "static/css/main.77203ad6.css",
+    "static/js/main.15df736c.js"
   ]
 }
