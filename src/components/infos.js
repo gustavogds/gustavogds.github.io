@@ -83,12 +83,17 @@ const infos = {
     {
       title: "Dependency Rule Modeling for Multiple Aspects Trajectories",
       local: "PET Computação - UFSC",
-      link: "/projects/oltpbench-project"
+      link: "/projects/oltpbench-project",
     },
     {
-      title: "PBAD - Padrão brasileiro de assinatura digital",
+      title: "PBAD Brazilian digital signature standard",
       local: "LabSec - UFSC",
-      link: "/projects/pbad-project"
+      link: "/projects/pbad-project",
+    },
+    {
+      title: "Student Management System",
+      local: "Personal Project",
+      link: "/projects/student-ms-project",
     },
   ],
 };

@@ -19,8 +19,7 @@
   height: 300px;
   border: solid 1px #f30303;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -56,8 +55,7 @@ h4 {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
-    sans-serif;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
   height: 40px;
   line-height: 40px;
   outline: 0;
@@ -92,8 +90,7 @@ h4 {
   justify-content: center;
   flex-direction: column;
   max-width: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -185,4 +182,41 @@ h4 {
   background-color: transparent;
   height: 40px;
   width: 20px;
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 0;
+}
+
+.custom-project-description {
+  max-width: 85%;
+  border: 1px solid #f30303;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  text-align: justify;
+  height: 100%;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.custom-project-description::-webkit-scrollbar-track {
+  margin: 25px 0;
+}
+
+.custom-project-description p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-indent: 1rem;
+}
+
+.custom-project-description strong {
+  font-weight: 600;
+  font-size: 1.2rem;
 }

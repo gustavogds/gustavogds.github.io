@@ -9,26 +9,24 @@
         "paragraph": "This project introduced the concept of dependency rule to represent patterns discovered from the analysis of trajectories with multiple aspects. They included patterns related to a trajectory, trajectory points, or the moving object. These rules are conceptually represented as an extension of a conceptual model for multiple aspects trajectories. A case study shows that the proposal is relevant as it represents the discovered rules with a concise but expressive conceptual model. Additionally, a performance evaluation showed the feasibility of the conceptual model designed over relational-based database management technologies."
       }
     ],
-    "details" : [
+    "details": [
       {
         "paragraph": "In this project, I was able to delve deeper into the execution of benchmarks to test the performance of both SQL and NewSQL DBMS’s. Using the “OLTPBenchmark” tool, I implemented some query settings for PostgreSQL and VoltDB databases, and tested the performance of both with different amounts of data. The focus was to have a performance comparison between a NewSQL DBMS and an SQL DBMS."
       }
     ],
-    "buttons" : [
+    "buttons": [
       {
         "buttonTitle": "Scientific article",
         "buttonLink": "https://link.springer.com/chapter/10.1007/978-3-030-89022-3_11"
-        
       },
       {
         "buttonTitle": "Oltpbench - GitHub",
         "buttonLink": "https://github.com/gustavogds/oltpbench"
       }
     ]
-    
   },
   "pbad-project": {
-    "title": "PBAD - Brazilian digital signature standard",
+    "title": "PBAD Brazilian digital signature standard",
     "description": [
       {
         "paragraph": "The main objective of this Research Project is to provide a specialized solution that meets the specific legislation of Brazilian bodies in the context of digital signatures for validating digitally signed electronic documents of a specific nature."
@@ -43,7 +41,7 @@
         "paragraph": "Teleworking poses challenges, in pandemic times, this modality makes it possible to reduce the risk of transmission of pathologies between professionals and the population served. Teleworking, combined with the technologies used to make this modality possible, provides and enables the provision of assistance in remote or difficult-to-access environments. It is observed that there is currently limited support for the practice of telecommuting in certain institutions. Thus, it is important to encourage research in this line, to study the issuance of signed receipts, particularly standardized methods to allow the creation of an artifact that enables the user to prove that, at a certain point, a digitally signed document was subjected to a digital signature verification service, makes it possible to provide solutions that serve society in general."
       }
     ],
-    "details" : [
+    "details": [
       {
         "paragraph": "In this project I worked on the development of a digital document validator, with an initial focus on medical certificates and prescriptions. In the beginning, I worked in the research area, looking for a way to implement the validation API in an application for mobile devices, I started trying to use OpenSSL to validate attribute certificates offline in the application (which was implemented in Flutter with the implementation of the validator in the application having been done in Java), but at the time OpenSSL did not have enough support to make the validator work correctly, so a different way had to be found."
       },
@@ -51,10 +49,23 @@
         "paragraph": "During this period, I started to focus on the validator application, which started to have validation only online through requests for the validator api configured with an endpoint, from then on, I started to work alone in the application, implementing what was requested by the ITI (National Institute of Information Technology)."
       }
     ],
-    "buttons" : [
+    "buttons": [
       {
         "buttonTitle": "PBAD/LabSec - Site",
         "buttonLink": "https://pbad.labsec.ufsc.br/"
+      }
+    ]
+  },
+  "student-ms-project": {
+    "title": "Student Management System",
+    "description": [
+      {
+        "paragraph": "In this project I worked on the development of a Student Management System using Django4, with the main objective of learning the framework and its functionalities. I used this project to learn more about the web development area."
+      }
+    ],
+    "details": [
+      {
+        "Image": "https://i.imgur.com/3Z2ZQ8M.png"
       }
     ]
   }

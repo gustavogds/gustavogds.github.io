@@ -18,8 +18,7 @@ const Project = () => {
   }, [params.project]);
 
   console.log(prj);
-  if (!prj)
-    return <Box textAlign={"center"}>{t("404 - Project not Found")}</Box>;
+  if (!prj) return <Box textAlign={"center"}>{t("404 - Project not Found")}</Box>;
 
   return (
     <div className="project-body">
@@ -28,27 +27,19 @@ const Project = () => {
         <span>
           <strong>{t("Project Summary")}</strong>
           {prj.description?.map((desc) => {
-            return (
-              <p>
-                {t(desc.paragraph)}
-              </p>
-            );
+            return <p>{t(desc.paragraph)}</p>;
           })}
         </span>
-        <Box height={"1rem"}/>
+        <Box height={"1rem"} />
         <span>
           <strong>{t("Project Details")}</strong>
           {prj.details?.map((detail) => {
-            return (
-              <p>
-                {t(detail.paragraph)}
-              </p>
-            );
+            return <p>{t(detail.paragraph)}</p>;
           })}
         </span>
       </div>
       <div className="project-buttons">
-        <button class="btn-goBack">
+        <button className="btn-goBack">
           <Link to={"/projects"} className="linkBtn">
             <FaArrowLeft className="arrow" />
           </Link>
@@ -56,7 +47,7 @@ const Project = () => {
         <div className="project-buttons">
           {prj.buttons?.map((btn) => {
             return (
-              <button class="project-btnShowInfo">
+              <button className="project-btnShowInfo">
                 <a className="linkBtn" href={btn.buttonLink}>
                   {t(btn.buttonTitle)}
                 </a>

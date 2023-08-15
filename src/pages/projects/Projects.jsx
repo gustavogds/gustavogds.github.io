@@ -9,7 +9,7 @@ const SendTo = (props) => {
   const { link } = props;
 
   return (
-    <button class="btnShowInfo">
+    <button className="btnShowInfo">
       <Link to={link} className="linkBtn">
         {t("Show more")}
       </Link>
@@ -36,14 +36,7 @@ const Projects = () => {
     <div>
       <div className="prjItems">
         {infos.projectsInformations?.map((info, index) => {
-          return (
-            <ShowProjectsInfo
-              key={index}
-              title={t(info.title)}
-              local={t(info.local)}
-              link={info.link}
-            />
-          );
+          return <ShowProjectsInfo key={index} title={t(info.title)} local={t(info.local)} link={info.link} />;
         })}
       </div>
     </div>

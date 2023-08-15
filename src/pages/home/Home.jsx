@@ -22,29 +22,16 @@ const Home = () => {
         mr={{ xs: 0, md: "2rem" }}
       />
       <Box className="self-text">
-        <h1>
-          {t("Hi, I'm Gustavo")}
-          <span className="wave-hand">👋</span>
-        </h1>
+        <h1>{t("Hi, I'm Gustavo")}</h1>
         <h2>{t("I'm a Full Stack Developer.")}</h2>
         <Box className="infos" component={"ul"}>
           {infos.homeInformations.map((info, index) => (
             <IconPrint key={index} icon={info.icon} text={t(info.text)} />
           ))}
         </Box>
-        <Box
-          display={"flex"}
-          gap={"1.5rem"}
-          justifyContent={"center"}
-          fontSize={{ xs: "2rem", md: "2.5rem" }}
-        >
+        <Box display={"flex"} gap={"1.5rem"} justifyContent={"center"} fontSize={{ xs: "2rem", md: "2.5rem" }}>
           {infos.socialInformations.map((social, index) => (
-            <SocialIcon
-              key={index}
-              link={social.link}
-              icon={social.icon}
-              label={social.label}
-            />
+            <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
           ))}
         </Box>
       </Box>
