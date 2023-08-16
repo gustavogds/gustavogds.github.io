@@ -3,12 +3,9 @@ import "./Projects.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Box } from "@mui/material";
-import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import { FaArrowLeft } from "react-icons/fa";
-
-const images = [];
 
 const ProjectSolaruIdle = () => {
   const { t } = useTranslation();
