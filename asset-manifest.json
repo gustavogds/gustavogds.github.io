@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7959b6e8.css",
-    "main.js": "/static/js/main.099803eb.js",
+    "main.js": "/static/js/main.dbb8331f.js",
     "static/media/solaruIdle_starchart.png": "/static/media/solaruIdle_starchart.bd7289e1d6f11585d7a3.png",
     "static/media/do.svg": "/static/media/do.d2287a1e1eee0805fc27.svg",
     "static/media/rs.svg": "/static/media/rs.dc155455e86e12200cb5.svg",
@@ -284,10 +284,10 @@
     "static/media/bd.svg": "/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/static/media/id.f624e2c8444a7794b357.svg",
     "main.7959b6e8.css.map": "/static/css/main.7959b6e8.css.map",
-    "main.099803eb.js.map": "/static/js/main.099803eb.js.map"
+    "main.dbb8331f.js.map": "/static/js/main.dbb8331f.js.map"
   },
   "entrypoints": [
     "static/css/main.7959b6e8.css",
-    "static/js/main.099803eb.js"
+    "static/js/main.dbb8331f.js"
   ]
 }
