@@ -13,7 +13,7 @@ import About from "./pages/about/About";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Navbar />
         <div className="App-body">
           <Routes>
