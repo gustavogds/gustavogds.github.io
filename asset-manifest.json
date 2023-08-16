@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.77203ad6.css",
-    "main.js": "/static/js/main.15df736c.js",
+    "main.css": "/static/css/main.7959b6e8.css",
+    "main.js": "/static/js/main.dbb8331f.js",
+    "static/media/solaruIdle_starchart.png": "/static/media/solaruIdle_starchart.bd7289e1d6f11585d7a3.png",
     "static/media/do.svg": "/static/media/do.d2287a1e1eee0805fc27.svg",
     "static/media/rs.svg": "/static/media/rs.dc155455e86e12200cb5.svg",
     "static/media/self.jpg": "/static/media/self.aa4cd8c2ecd248760901.jpg",
+    "static/media/solaruIdle_foundry.png": "/static/media/solaruIdle_foundry.d5588973f9c52c9f97c9.png",
+    "static/media/solaruIdle_loadout.png": "/static/media/solaruIdle_loadout.bee067d7b7fdabbfd1a4.png",
+    "static/media/solaruIdle_inventory.png": "/static/media/solaruIdle_inventory.a45dbbec4bc252d5c929.png",
     "static/media/bo.svg": "/static/media/bo.e0a90fef5f7c6c6ab66f.svg",
     "static/media/mx.svg": "/static/media/mx.e18539f71c1156849ae2.svg",
     "static/media/ea.svg": "/static/media/ea.786adca69a2e53c3248d.svg",
     "static/media/es.svg": "/static/media/es.e3db1b5f8a2ec8ae8764.svg",
     "static/media/va.svg": "/static/media/va.cf15a64943f6c7d24a2b.svg",
     "static/media/sv.svg": "/static/media/sv.2b995d455aa93dcba0cf.svg",
+    "static/media/solaruIdle_login.png": "/static/media/solaruIdle_login.42f67b8b47af8048acfa.png",
     "static/media/logo.png": "/static/media/logo.391baa016c23208eb228.png",
+    "static/media/solaruIdle_signup.png": "/static/media/solaruIdle_signup.3bd8f5be88d71a834e60.png",
     "static/media/pe.svg": "/static/media/pe.38abe80e0cb9775bea8c.svg",
     "static/media/studentms_studentinfo.png": "/static/media/studentms_studentinfo.27fbc8d501c5c2896123.png",
     "static/media/me.svg": "/static/media/me.0c03b01f0a036dd1e720.svg",
@@ -277,11 +283,11 @@
     "static/media/de.svg": "/static/media/de.6435bf24d148ca7248e7.svg",
     "static/media/bd.svg": "/static/media/bd.0ad8c443ef4d47ea0497.svg",
     "static/media/id.svg": "/static/media/id.f624e2c8444a7794b357.svg",
-    "main.77203ad6.css.map": "/static/css/main.77203ad6.css.map",
-    "main.15df736c.js.map": "/static/js/main.15df736c.js.map"
+    "main.7959b6e8.css.map": "/static/css/main.7959b6e8.css.map",
+    "main.dbb8331f.js.map": "/static/js/main.dbb8331f.js.map"
   },
   "entrypoints": [
-    "static/css/main.77203ad6.css",
-    "static/js/main.15df736c.js"
+    "static/css/main.7959b6e8.css",
+    "static/js/main.dbb8331f.js"
   ]
 }
