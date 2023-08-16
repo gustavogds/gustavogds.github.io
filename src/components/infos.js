@@ -95,6 +95,16 @@ const infos = {
       local: "Personal Project",
       link: "/projects/student-ms-project",
     },
+    {
+      title: "Solaru Idle",
+      local: "Personal Project (Work in progress)",
+      link: "/projects/solaru-idle-project",
+    },
+    {
+      title: "OrfeuTunes - Music Streaming",
+      local: "Personal Project (Work in progress)",
+      link: "/projects/orfeu-tunes-project",
+    },
   ],
 };
 

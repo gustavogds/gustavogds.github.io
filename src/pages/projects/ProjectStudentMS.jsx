@@ -42,7 +42,7 @@ const images = [
   },
 ];
 
-const CustomProject = () => {
+const ProjectStudentMS = () => {
   const { t } = useTranslation();
 
   return (
@@ -65,7 +65,7 @@ const CustomProject = () => {
               "My focus in this project was centralized in the implementation of a User Authentication system, first I started implementing the student management system, which was too simple but very good to learn the basics of the framework and then I moved on to my idea, I initially implemented a zero authentication, functional but insecure the way it was, so I decided to implement it in a more secure way, which was using the Allauth lib, with this way it was much simpler and as the security part was practically ready, I chose this way as final for being more efficient."
             )}
           </p>
-          <div className="testbox">
+          <div className="image-gallery">
             <ImageGallery
               items={images}
               showPlayButton={false}
@@ -84,16 +84,14 @@ const CustomProject = () => {
             <FaArrowLeft className="arrow" />
           </Link>
         </button>
-        <div className="project-buttons">
-          <button className="project-btnShowInfo">
-            <a className="linkBtn" href={"/about"}>
-              {t("teste")}
-            </a>
-          </button>
-        </div>
+        <button className="project-btnShowInfo">
+          <a className="linkBtn" href={"https://github.com/gustavogds/Django_Student-MS"}>
+            {t("Project - GitHub")}
+          </a>
+        </button>
       </div>
     </div>
   );
 };
 
-export default CustomProject;
+export default ProjectStudentMS;

@@ -55,18 +55,5 @@
         "buttonLink": "https://pbad.labsec.ufsc.br/"
       }
     ]
-  },
-  "student-ms-project": {
-    "title": "Student Management System",
-    "description": [
-      {
-        "paragraph": "In this project I worked on the development of a Student Management System using Django4, with the main objective of learning the framework and its functionalities. I used this project to learn more about the web development area."
-      }
-    ],
-    "details": [
-      {
-        "Image": "https://i.imgur.com/3Z2ZQ8M.png"
-      }
-    ]
   }
 }
